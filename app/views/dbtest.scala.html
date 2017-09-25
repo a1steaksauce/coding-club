@@ -1,0 +1,15 @@
+@(test: ArrayList[String])
+
+<html>
+    <head>
+        <title>Database tester</title>
+    </head>
+    <body>
+        <ul>
+            @for(str <- test) {
+                <li>@str</li>
+            }
+        </ul>
+        @scala.util.Random.nextInt()
+    </body>
+</html>
